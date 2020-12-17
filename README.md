@@ -18,66 +18,97 @@ tags:
 
 ## Overview
 
-You will make and deploy a single-page React app which will list a few of your favourite places.
+You will make and deploy a single-page React app which will show baby names and let you pick your favourites. The names data is provided for you.
 
 Here's an example screenshot to give you a rough idea, but note that the project text below takes precedence over any details from the image. Also, you are free to lay out and style your project as you see fit.
 
-![example screenshot of simple implementation of the 'favourite places' project](example-screenshots/screenshot.png)
+![example screenshot of simple implementation of the 'baby names' project](./example-screenshots/finished.png)
 
 ## Setup
 
-- Create a new React app on your machine called `favourite-places-react`. See instructions on React project setup. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
+- Create a new React app on your machine called `baby-names-react`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
 
-- Publish the project repo to github. Call it `favourite-places-react`. TODO: add link to instructions: "publishing new project repo to github".
+- Publish the project repo to github. Call it `baby-names-react`. TODO: add link to instructions: "publishing new project repo to github".
 
-## Exercises:
+- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-baby-names`.netlify.app where `yourgithubusername` is your github username. TODO: add link to Netlify deploy instructions.
 
-### Exercise: Create the app!
+### Setup - the data:
 
-The app's single page should have:
+The data is available in the file [./data/babyNamesData.json](./data/babyNamesData.json).
 
-- a page header showing a suitable title.
-- at least four "place" entries (see details below)
-- a page footer including - at least - attribution for any images used.
+Copy across this JSON file to your app's `src/` directory, and then import it.
 
-Each "place" entry should have:
+## Exercise 1
 
-- a title (text)
-- a place name (text)
-- a country name (text)
-- a main image (URL)
-- a link to the rough location on google maps (or alternative) (URL)
-- some text explaining why you like the place
+- Write a React app which lists baby names from the given file.
 
-**Regarding components**
+- It should display boys' and girls' names differently - it's your choice as to how\*
 
-Create a React component to represent a `Place`.
-Parameterise it with props so that you can reuse the component for each of your favourite places.
+- The names should be displayed in ascending alphabetical order.
 
-You are free to make other components (either for subcomponents of a Place, or for other elements of the page).
+- Your project should be on GitHub and Netlify with correct names.
 
-**Regarding layout and styling**
+(\*) Feel very free to break from the the "blue-for-boys/pink-for-girls" stereotyping and style it differently.
 
-You can lay the page out and style it as you like.
+### Example Screenshot
 
-### Exercise: Deploy to netlify
+![Level 1 Example Screenshot](./example-screenshots/level-1.png)
 
-Set up continuous deployment of your site to [netlify](https://netlify.app/) and make sure it has deployed.
+## Exercise 2
 
-Ensure your site is called `academy-yourgithubusername-places`.netlify.app where `yourgithubusername` is your github username. TODO: add link to netlify deploy instructions.
+- Add a search bar.
 
-## Ideas for more work
+- When the user types into it, your app should update the displayed list of baby names to only show matches.
 
-- HTML: Link to another classmate's site in your footer to make a ring of "favourite places" sites.
-- HTML: Make a table of contents or other navigation to take you directly to a chosen Place section.
-- TypeScript & React: Make it data-driven. Store your places in an array of objects, and loop over them to create your list of places.
-- CSS: Learn to use css grid or flexbox to lay out your places in a grid.
-- CSS: Make it look good on mobile devices, too.
-- Advanced: Embed a google map for each place
-- Advanced: Embed a google map showing markers for each place.
+- Matches should be case-insensitive.
 
-## Further resources
+- When the search bar is clear, all names should be shown.
 
-- Free stock photos at unsplash: https://unsplash.com/ and pexels: https://www.pexels.com/ though you are encouraged to use your own images if you like.
+### Example Screenshot
+
+![Level 2 Example Screenshot](./example-screenshots/level-2.png)
+
+## Exercise 3
+
+- Add a "favourites" list, displayed separately.
+
+- When the user clicks a name from the main list, it should be moved to a "favourites" list. It should disappear from the main list!
+
+- When the user clicks a name from the _favourites_ list, it should be moved back to the main list. It should disappear from the favourites list!
+
+### Example Screenshot
+
+![Level 3 Example Screenshot](./example-screenshots/level-3.png)
+
+## Exercise 4
+
+Add "name gender" filter buttons.
+
+These buttons should allow the user to see only boy names, girl names, or all names.
+
+The buttons should operate as "radio" buttons - exactly one should be active at any time.
+
+The app should start by showing all names.
+
+It should be clear which filter (if any) is in effect at any time.
+
+_How it works with search:_
+
+If there is also a search term in effect, your app should apply the gender filter to those search results.
+
+### Example Screenshot
+
+![Level 4 Example Screenshot](./example-screenshots/level-4.png)
+
+# Ideas for more work
+
+- Find a way to persist the user's favourites even after the browser tab is closed
+- Add the ability for the user to shuffle the list of names
+- Find an attractive way to differentiate names by gender that doesn't use blue/pink stereotypes.
+- Add some suitably-themed sound effects for the UI.
+  - Josh W Comeau's [useSound hook](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/) can help here,
+  - as can [freesound.org](https://freesound.org/)
 
 ## Credits
+
+The core app idea for this challenge, and its default look, were taken from [Simon Vrachliotis'](https://simonswiss.com/) app, found via [react.rocks](https://react.rocks/example/Baby_name_inspiration).
