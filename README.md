@@ -29,7 +29,7 @@ Here's an example screenshot to give you a rough idea, but note that the project
 - Create a new React app on your machine called `baby-names-react`. Make sure you set up with TypeScript not the JavaScript default. 
 [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
 
-- Publish the project repo to github. Call it `baby-names-react`. TODO: add link to instructions: "publishing new project repo to github".
+- Publish the project repo to github. Call it `baby-names-react`.
 
 - Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-baby-names`.netlify.app where `yourgithubusername` is your github username. See [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
 
