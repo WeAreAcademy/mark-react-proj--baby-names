@@ -26,7 +26,7 @@ Here's an example screenshot to give you a rough idea, but note that the project
 
 ## Setup
 
-- Create a new React app on your machine called `baby-names-react`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
+- Create a new React app on your machine called `baby-names-react`. Make sure you set up with TypeScript not the JavaScript default. Follow the [React docs](https://create-react-app.dev/docs/adding-typescript/#installation) for how to do this.
 
 - Publish the project repo to github. Call it `baby-names-react`. TODO: add link to instructions: "publishing new project repo to github".
 
