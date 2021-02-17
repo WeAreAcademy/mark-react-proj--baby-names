@@ -73,6 +73,8 @@ Copy across this JSON file to your app's `src/` directory, and then import it.
 
 ## Exercise 3
 
+- Check in with faculty before continuing to this level.
+
 - Add a "favourites" list, displayed separately.
 
 - When the user clicks a name from the main list, it should be moved to a "favourites" list. It should disappear from the main list!
