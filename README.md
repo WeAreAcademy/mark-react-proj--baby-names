@@ -59,6 +59,8 @@ Copy across this JSON file to your app's `src/` directory, and then import it.
 
 ## Exercise 2
 
+(Make sure your previous work is all committed to git before commencing this exercise!)
+
 - Add a search bar.
 
 - When the user types into it, your app should update the displayed list of baby names to only show matches.
@@ -71,7 +73,13 @@ Copy across this JSON file to your app's `src/` directory, and then import it.
 
 ![Level 2 Example Screenshot](./example-screenshots/level-2.png)
 
+### Note
+Don't worry initially about breaking down your solution into multiple cooperating components.  That will add extra complexity.  First, feel free to get the application working with all the logic and state stored in a single component.
+
+
 ## Exercise 3
+
+(Make sure your previous work is all committed to git before commencing this exercise!)
 
 - Check in with faculty before continuing to this level.
 
@@ -86,6 +94,8 @@ Copy across this JSON file to your app's `src/` directory, and then import it.
 ![Level 3 Example Screenshot](./example-screenshots/level-3.png)
 
 ## Exercise 4
+
+(Make sure your previous work is all committed to git before commencing this exercise!)
 
 Add "name gender" filter buttons.
 
@@ -104,6 +114,11 @@ If there is also a search term in effect, your app should apply the gender filte
 ### Example Screenshot
 
 ![Level 4 Example Screenshot](./example-screenshots/level-4.png)
+
+# Organise into components
+
+If you haven't yet organised the application into components, try to do so now.  This isn't easy, so make sure you've committed your work before you start.
+
 
 # Ideas for more work
 
